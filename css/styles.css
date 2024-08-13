@@ -304,7 +304,7 @@ address a:focus {
 .team-icons {
   width: 40px;
   height: 40px;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icons-link {
@@ -425,7 +425,7 @@ footer .logo-span {
 .footer-icon-item {
   width: 40px;
   height: 40px;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-item-link {
   width: 100%;
