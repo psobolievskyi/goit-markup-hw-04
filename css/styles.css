@@ -53,6 +53,8 @@ img {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-row {
   display: flex;
@@ -100,6 +102,21 @@ nav ul {
   color: #2e2f42;
   padding: 24px 0;
 }
+.menu-link-first {
+  position: relative;
+  color: #404bbf;
+}
+.menu-link-first::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 address {
   font-style: normal;
   margin-left: auto;
@@ -127,7 +144,9 @@ address a:focus {
 }
 .address-link {
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .address-link:hover {
   color: #404bbf;
 }
@@ -135,6 +154,15 @@ address a:focus {
 .hero-section {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-img.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   display: block;
@@ -165,6 +193,7 @@ address a:focus {
   color: white;
   background-color: #4d5ae5;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover {
   background-color: #404bbf;
